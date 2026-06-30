@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Saúde Tiradentes</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-area">
+
+            <img class="logo" src="img/ChatGPT Image 30 de abr. de 2026, 20_51_37.png" alt="logo">
+
+            <div>
+                <h2>Saúde Tiradentes</h2>
+                <p>Cuidando da nossa cidade</p>
+            </div>
+
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html">Serviços</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="chat.html">Chat Saúde</a>
+        </nav>
+
+        <div class="header-buttons">
+            <button type="button" class="btn-login" id="headerLoginBtn">Entrar</button>
+            <button type="button" class="btn-cadastro" id="headerCadastroBtn">Cadastro</button>
+        </div>
+
+    </header>
+
+    <section class="login-section">
+
+        <div class="left-login">
+
+            <h1 class="typing">
+                <span id="texto"></span>
+                <span class="cursor">|</span>
+            </h1>
+
+            <h1>
+                Acesse sua conta
+                <span class="blue">Saúde Tiradentes</span>
+            </h1>
+
+            <p>
+                Faça login para acessar consultas, exames, medicamentos e serviços da plataforma.
+            </p>
+
+            <div class="info-box">
+
+                <div class="info-card">
+                    <img src="img/shield.png" alt="">
+                    <div>
+                        <h2>Acesso seguro</h2>
+                        <p>Seus dados protegidos</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/clock.png" alt="">
+                    <div>
+                        <h2>Atendimento rápido</h2>
+                        <p>Disponível 24 horas</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/chart.png" alt="">
+                    <div>
+                        <h2>Serviços inteligentes</h2>
+                        <p>Facilidade para você</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="login-box">
+
+            <img class="login-icon" src="img/logo.png" alt="">
+
+            <h1 id="authTitle">Entrar na conta</h1>
+
+            <p id="authSubtitle">Preencha seus dados para continuar</p>
+
+            <form id="authForm">
+
+                <div class="input-box" id="nameField" style="display: none;">
+                    <input type="text" placeholder="Seu nome completo">
+                </div>
+
+                <div class="input-box">
+                    <input type="email" placeholder="Seu e-mail">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Sua senha">
+                </div>
+
+                <div class="input-box" id="confirmField" style="display: none;">
+                    <input type="password" placeholder="Confirmar senha">
+                </div>
+
+                <div class="remember" id="rememberRow">
+
+                    <label>
+                        <input type="checkbox">
+                        Lembrar de mim
+                    </label>
+
+                    <a href="">Esqueceu sua senha?</a>
+
+                </div>
+
+                <div id="formMessage" class="form-message" aria-live="polite"></div>
+
+                <button type="submit" class="btn-entrar" id="submitBtn">
+                    Entrar
+                </button>
+
+            </form>
+
+            <div class="line"></div>
+
+            <div class="social-login">
+
+                <button>Google</button>
+                <button>Microsoft</button>
+
+            </div>
+
+            <span class="register">
+                <span id="registerText">Ainda não tem conta?</span>
+                <a href="#" id="toggleAuth">Cadastrar agora</a>
+            </span>
+
+        </div>
+
+    </section>
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>
