@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta | Saúde Tiradentes</title>
+
+    <link rel="stylesheet" href="cadastro2.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Saúde Tiradentes</a>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="chat.html">Chat Saúde</a>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="cadastro.html" class="btn-login">Entrar</a>
+            <a href="cadastro2.html" class="btn-register active">Criar conta</a>
+        </div>
+    </header>
+
+    <main class="register-section">
+
+        <div class="register-card">
+
+            <div class="register-header">
+                <h1>Crie sua conta</h1>
+                <p>Faça seu cadastro para acessar os serviços do Saúde Tiradentes.</p>
+            </div>
+
+            <form id="authForm">
+
+                <div class="form-group">
+                    <label for="nameInput">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nameInput"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="emailInput">E-mail</label>
+                    <input
+                        type="email"
+                        id="emailInput"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneInput">Telefone</label>
+                    <input
+                        type="tel"
+                        id="phoneInput"
+                        placeholder="(11) 99999-9999"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="addressInput">Endereço</label>
+                    <input
+                        type="text"
+                        id="addressInput"
+                        placeholder="Digite seu endereço"
+                        autocomplete="street-address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="birthInput">Data de nascimento</label>
+                    <input
+                        type="date"
+                        id="birthInput"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordInput">Senha</label>
+                    <input
+                        type="password"
+                        id="passwordInput"
+                        placeholder="Crie uma senha"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmInput">Confirmar senha</label>
+                    <input
+                        type="password"
+                        id="confirmInput"
+                        placeholder="Digite sua senha novamente"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+                <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+
+                <button type="submit" id="submitBtn" class="btn-submit">
+                    Criar minha conta
+                </button>
+
+            </form>
+
+            <div class="login-link">
+                <p>Já possui uma conta?</p>
+                <a href="cadastro.html">Entrar na minha conta</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Saúde Tiradentes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="cadastro2.js"></script>
+
+</body>
+</html>

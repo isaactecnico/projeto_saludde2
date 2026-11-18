@@ -93,25 +93,73 @@
 
             <p id="authSubtitle">Preencha seus dados para continuar</p>
 
-            <form id="authForm">
+<form id="authForm">
 
-                <div class="input-box" id="nameField" style="display: none;">
-                    <input type="text" placeholder="Seu nome completo">
-                </div>
+    <div class="input-box" id="nameField" style="display: none;">
+        <input
+            type="text"
+            id="nameInput"
+            placeholder="Seu nome completo"
+            autocomplete="name"
+        >
+    </div>
 
-                <div class="input-box">
-                    <input type="email" placeholder="Seu e-mail">
-                </div>
+    <div class="input-box" id="phoneField" style="display: none;">
+        <input
+            type="tel"
+            id="phoneInput"
+            placeholder="Seu telefone"
+            autocomplete="tel"
+        >
+    </div>
 
-                <div class="input-box">
-                    <input type="password" placeholder="Sua senha">
-                </div>
+    <div class="input-box" id="addressField" style="display: none;">
+        <input
+            type="text"
+            id="addressInput"
+            placeholder="Seu endereço"
+            autocomplete="street-address"
+        >
+    </div>
 
-                <div class="input-box" id="confirmField" style="display: none;">
-                    <input type="password" placeholder="Confirmar senha">
-                </div>
+    <div class="input-box" id="birthField" style="display: none;">
+        <input
+            type="date"
+            id="birthInput"
+            aria-label="Data de nascimento"
+        >
+    </div>
 
-                <div class="remember" id="rememberRow">
+    <div class="input-box">
+        <input
+            type="email"
+            id="emailInput"
+            placeholder="Seu e-mail"
+            autocomplete="email"
+            required
+        >
+    </div>
+
+    <div class="input-box">
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Sua senha"
+            autocomplete="current-password"
+            required
+        >
+    </div>
+
+    <div class="input-box" id="confirmField" style="display: none;">
+        <input
+            type="password"
+            id="confirmInput"
+            placeholder="Confirmar senha"
+            autocomplete="new-password"
+        >
+    </div>
+
+    <div class="remember" id="rememberRow">
 
                     <label>
                         <input type="checkbox">
@@ -148,7 +196,7 @@
 
     </section>
 
-    <script src="cadastro.js"></script>
+    <script type="module" src="cadastro.js"></script>
 
 </body>
 

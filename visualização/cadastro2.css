@@ -1,0 +1,299 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1120;
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: #111c31;
+    border-bottom: 1px solid #263650;
+}
+
+.logo a {
+    color: #38bdf8;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #38bdf8;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-login,
+.btn-register {
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-login {
+    color: #e2e8f0;
+    border: 1px solid #475569;
+}
+
+.btn-login:hover {
+    background: #263650;
+}
+
+.btn-register {
+    color: #082f49;
+    background: #38bdf8;
+}
+
+.btn-register:hover {
+    background: #0ea5e9;
+}
+
+/* ÁREA DE CADASTRO */
+
+.register-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 20px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 520px;
+    padding: 38px;
+    background: #111c31;
+    border: 1px solid #263650;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-header h1 {
+    color: #f8fafc;
+    font-size: 29px;
+    margin-bottom: 12px;
+}
+
+.register-header p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* FORMULÁRIO */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 14px;
+    color: #f8fafc;
+    background: #0b1120;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #64748b;
+}
+
+.form-group input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12);
+}
+
+.form-group input[type="date"] {
+    color-scheme: dark;
+}
+
+/* MENSAGENS */
+
+.form-message {
+    display: none;
+    margin: 8px 0 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.8);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.form-message.show {
+    display: block;
+}
+
+/* BOTÃO */
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    color: #082f49;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background: #0ea5e9;
+    transform: translateY(-1px);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* LINK PARA LOGIN */
+
+.login-link {
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid #263650;
+    padding-top: 22px;
+}
+
+.login-link p {
+    display: inline;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+
+.footer {
+    padding: 22px;
+    text-align: center;
+    background: #111c31;
+    border-top: 1px solid #263650;
+}
+
+.footer p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding: 18px 5%;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .header-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .register-section {
+        padding: 30px 14px;
+    }
+
+    .register-card {
+        padding: 25px 20px;
+    }
+
+    .register-header h1 {
+        font-size: 25px;
+    }
+
+    .login-link p,
+    .login-link a {
+        display: block;
+        margin: 5px 0;
+    }
+}
