@@ -136,8 +136,8 @@ authForm.addEventListener("submit", async (event) => {
             }
 
             const { data, error } = await supabase.auth.signUp({
-                email: email,
-                password: password,
+                email,
+                password,
                 options: {
                     data: {
                         nome: name,
@@ -151,28 +151,39 @@ authForm.addEventListener("submit", async (event) => {
             if (error) throw error;
 
             if (data.session) {
-                showMessage("Cadastro realizado com sucesso!");
+                showMessage("Cadastro realizado com sucesso! Redirecionando...");
             } else {
                 showMessage(
-                    "Cadastro realizado! Confira seu e-mail para confirmar a conta."
+                    "Cadastro realizado! Confirme seu e-mail. Redirecionando..."
                 );
             }
 
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 1500);
+
         } else {
-            const { error } = await supabase.auth.signInWithPassword({
-                email: email,
-                password: password
+            const { data, error } = await supabase.auth.signInWithPassword({
+                email,
+                password
             });
 
             if (error) throw error;
 
-            showMessage("Login realizado com sucesso!");
+            if (!data.session) {
+                throw new Error("Não foi possível iniciar sua sessão.");
+            }
+
+            showMessage("Login realizado com sucesso! Redirecionando...");
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 1200);
         }
 
     } catch (error) {
-        showMessage(error.message, true);
+        showMessage(error.message || "Ocorreu um erro.", true);
 
-    } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = isRegister ? "Cadastrar" : "Entrar";
     }
