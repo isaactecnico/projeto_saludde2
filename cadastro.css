@@ -408,39 +408,6 @@ nav a:hover {
 }
 
 
-/* LINHA */
-
-.line {
-    margin: 25px 0;
-    height: 1px;
-    background: #e5e7eb;
-}
-
-
-/* SOCIAL */
-
-.social-login {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.social-login button {
-    flex: 1;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-    background: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.social-login button:hover {
-    background: #f3f4f6;
-    transform: scale(1.03);
-}
-
-
 /* REGISTER */
 
 .register {
@@ -519,10 +486,6 @@ nav a:hover {
     .btn-login,
     .btn-cadastro,
     .btn-entrar {
-        width: 100%;
-    }
-
-    .social-login button {
         width: 100%;
     }
 

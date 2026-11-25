@@ -168,9 +168,11 @@ nav a.active {
 }
 
 .btn-outline {
+    display: inline-block;
     border: 1px solid #444;
     background: transparent;
     color: #fff;
+    text-decoration: none;
 }
 
 .btn-outline:hover {
@@ -180,9 +182,11 @@ nav a.active {
 }
 
 .btn-primary {
+    display: inline-block;
     background: linear-gradient(135deg, #2563eb, #3b82f6);
     border: none;
     color: #fff;
+    text-decoration: none;
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.35);
 }
 

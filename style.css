@@ -249,6 +249,7 @@ nav a:hover::after {
 }
 
 .btn-login {
+    display: inline-block;
     background: transparent;
     border: 1px solid #374151;
     color: white;
@@ -256,6 +257,7 @@ nav a:hover::after {
     border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -343,6 +345,7 @@ nav a:hover::after {
 }
 
 .btn-primary {
+    display: inline-block;
     background: #2563EB;
     border: none;
     color: white;
@@ -351,6 +354,7 @@ nav a:hover::after {
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
     transition: 0.3s;
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }

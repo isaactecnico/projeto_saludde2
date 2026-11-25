@@ -12,12 +12,20 @@
 
 <body>
 
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">Saúde Tiradentes</a>
+    <header>
+
+        <div class="logo-area">
+
+            <img class="logo" src="img/ChatGPT Image 30 de abr. de 2026, 20_51_37.png" alt="logo">
+
+            <div>
+                <h2>Saúde Tiradentes</h2>
+                <p>Cuidando da nossa cidade</p>
+            </div>
+
         </div>
 
-        <nav class="nav">
+        <nav>
             <a href="index.html">Início</a>
             <a href="index.html#servicos">Serviços</a>
             <a href="mapa.html">Mapa</a>
@@ -26,76 +34,114 @@
 
         <div class="header-buttons">
             <a href="cadastro.html" class="btn-login">Entrar</a>
-            <a href="cadastro2.html" class="btn-register active">Criar conta</a>
+            <a href="cadastro2.html" class="btn-cadastro active">Cadastro</a>
         </div>
+
     </header>
 
-    <main class="register-section">
+    <section class="login-section">
 
-        <div class="register-card">
+        <div class="left-login">
 
-            <div class="register-header">
-                <h1>Crie sua conta</h1>
-                <p>Faça seu cadastro para acessar os serviços do Saúde Tiradentes.</p>
+            <h1>
+                Faça parte do
+                <span class="blue">Saúde Tiradentes</span>
+            </h1>
+
+            <p>
+                Crie sua conta para acessar consultas, exames, medicamentos e serviços da plataforma.
+            </p>
+
+            <div class="info-box">
+
+                <div class="info-card">
+                    <img src="img/shield.png" alt="">
+                    <div>
+                        <h2>Acesso seguro</h2>
+                        <p>Seus dados protegidos</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/clock.png" alt="">
+                    <div>
+                        <h2>Atendimento rápido</h2>
+                        <p>Disponível 24 horas</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/chart.png" alt="">
+                    <div>
+                        <h2>Serviços inteligentes</h2>
+                        <p>Facilidade para você</p>
+                    </div>
+                </div>
+
             </div>
+
+        </div>
+
+        <div class="login-box">
+
+            <img class="login-icon" src="img/logo.png" alt="">
+
+            <h1>Criar sua conta</h1>
+
+            <p>Preencha seus dados para continuar</p>
 
             <form id="authForm">
 
-                <div class="form-group">
-                    <label for="nameInput">Nome completo</label>
+                <div class="input-box">
                     <input
                         type="text"
                         id="nameInput"
-                        placeholder="Digite seu nome completo"
+                        placeholder="Nome completo"
                         autocomplete="name"
                         required
                     >
                 </div>
 
-                <div class="form-group">
-                    <label for="emailInput">E-mail</label>
+                <div class="input-box">
                     <input
                         type="email"
                         id="emailInput"
-                        placeholder="Digite seu e-mail"
+                        placeholder="Seu e-mail"
                         autocomplete="email"
                         required
                     >
                 </div>
 
-                <div class="form-group">
-                    <label for="phoneInput">Telefone</label>
+                <div class="input-box">
                     <input
                         type="tel"
                         id="phoneInput"
-                        placeholder="(11) 99999-9999"
+                        placeholder="Seu telefone"
                         autocomplete="tel"
                         required
                     >
                 </div>
 
-                <div class="form-group">
-                    <label for="addressInput">Endereço</label>
+                <div class="input-box">
                     <input
                         type="text"
                         id="addressInput"
-                        placeholder="Digite seu endereço"
+                        placeholder="Seu endereço"
                         autocomplete="street-address"
                         required
                     >
                 </div>
 
-                <div class="form-group">
-                    <label for="birthInput">Data de nascimento</label>
+                <div class="input-box">
                     <input
                         type="date"
                         id="birthInput"
+                        aria-label="Data de nascimento"
                         required
                     >
                 </div>
 
-                <div class="form-group">
-                    <label for="passwordInput">Senha</label>
+                <div class="input-box">
                     <input
                         type="password"
                         id="passwordInput"
@@ -106,38 +152,35 @@
                     >
                 </div>
 
-                <div class="form-group">
-                    <label for="confirmInput">Confirmar senha</label>
+                <div class="input-box">
                     <input
                         type="password"
                         id="confirmInput"
-                        placeholder="Digite sua senha novamente"
+                        placeholder="Confirmar senha"
                         autocomplete="new-password"
                         minlength="6"
                         required
                     >
                 </div>
 
-                <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+                <div id="formMessage" class="form-message" aria-live="polite"></div>
 
-                <button type="submit" id="submitBtn" class="btn-submit">
+                <button type="submit" class="btn-entrar" id="submitBtn">
                     Criar minha conta
                 </button>
 
             </form>
 
-            <div class="login-link">
-                <p>Já possui uma conta?</p>
+            <div class="line"></div>
+
+            <span class="register">
+                Já possui uma conta?
                 <a href="cadastro.html">Entrar na minha conta</a>
-            </div>
+            </span>
 
         </div>
 
-    </main>
-
-    <footer class="footer">
-        <p>© 2026 Saúde Tiradentes. Todos os direitos reservados.</p>
-    </footer>
+    </section>
 
     <script type="module" src="cadastro2.js"></script>
 
