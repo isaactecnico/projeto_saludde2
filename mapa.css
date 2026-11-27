@@ -135,13 +135,11 @@ nav a::after {
     transition: 0.4s;
 }
 
-nav a:hover::after,
-nav a.active::after {
+nav a:hover::after {
     width: 100%;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
     color: #60a5fa;
 }
 

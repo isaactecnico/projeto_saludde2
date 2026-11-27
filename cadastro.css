@@ -77,19 +77,33 @@ header {
 
 nav {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
+    position: relative;
+    transition: .3s;
 }
 
 nav a:hover {
     color: #2563EB;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #2563EB;
+    transition: .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 .header-buttons {
@@ -105,6 +119,7 @@ nav a:hover {
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .btn-login {
@@ -437,11 +452,9 @@ nav a:hover {
         text-align: center;
         justify-content: center;
     }
-
     .left-login {
         max-width: 100%;
     }
-
     .login-box {
         width: 100%;
         max-width: 500px;
@@ -453,30 +466,24 @@ nav a:hover {
         padding: 16px 5%;
         justify-content: center;
     }
-
     .logo-area {
         width: 100%;
         justify-content: center;
     }
-
     nav {
         width: 100%;
         justify-content: center;
     }
-
     .header-buttons {
         width: 100%;
         justify-content: center;
     }
-
     .login-section {
         padding: 140px 5% 60px;
     }
-
     .login-box {
         padding: 28px 20px;
     }
-
     .remember {
         justify-content: center;
     }
@@ -488,7 +495,6 @@ nav a:hover {
     .btn-entrar {
         width: 100%;
     }
-
     .typing,
     .left-login h1 {
         font-size: 1.8rem;
